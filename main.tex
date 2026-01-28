@@ -1,1 +1,160 @@
-engineering
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Font options
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    \textbf{\Huge \scshape Andres Cruz} \\ \vspace{2pt}
+    \small (786) 262-0053 $|$ \href{mailto:acruz24100@gmail.com}{\underline{acruz24100@gmail.com}} $|$ \href{https://linkedin.com/in/andrescruz}{\underline{linkedin.com/in/andres-cruz}} $|$ \href{https://github.com/andrescruz}{\underline{github.com/andrescruz}} \\ \vspace{5pt}
+    \textbf{Availability:} June -- December 2026 (Open to all shifts) $|$ \textbf{Transportation:} Reliable Personal Transportation Available
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {B.S. Computer Science (AI Concentration), Minor in Mathematics}{Sep 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Object-Oriented Design, Embedded Systems, Calculus III, Algorithms, Physics for Engineering (I \& II), Programming in C++, Computer Systems, Artificial Intelligence, Professional Development}
+        \resumeItem{\textbf{Honors:} GPA: 3.84/4.0 $|$ Dean's List}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical \& Engineering Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C++, Python, Java, SQL, TypeScript, C (Embedded)} \\
+     \textbf{Engineering \& Hardware}{: Automotive Diagnostics \& Repair, Circuit Analysis, IoT (MQTT/ESP32), 3D Printing, Soldering.} \\
+     \textbf{Software Tools}{: Microsoft Office Suite, Linux, Git, VS Code, SolidWorks, AutoCAD, Fusion 360.} \\
+     \textbf{Languages}{: English (Native), Spanish (Native/Fluent)}
+    }}
+ \end{itemize}
+
+
+%-----------PROJECTS & EXPERIENCE-----------
+\section{Engineering Projects \& Experience}
+  \resumeSubHeadingListStart
+
+    % Project 1: The "Ride Control" / IoT Project
+    \resumeProjectHeading
+      {\textbf{Autonomous IoT Access Control System} $|$ \emph{C++, Python, Raspberry Pi, MQTT}}{Miami, FL}
+      \resumeItemListStart
+        \resumeItem{Engineered a distributed facility access system using \textbf{Python} and \textbf{MQTT} protocols to manage electromechanical locks via facial recognition, mimicking safety-critical logic used in ride access systems.}
+        \resumeItem{Programmed fail-safe protocols in \textbf{C++} to ensure the system defaults to a secure state during power interruptions or network failures, prioritizing user safety.}
+        \resumeItem{Integrated hardware components (solenoids, relays, camera modules) with software logic to reduce entry friction by 40\%, demonstrating a focus on guest experience and operational efficiency.}
+      \resumeItemListEnd
+
+    % Project 2: The "Mechanic/Junkyard" Project (Crucial for WDW Engineering)
+    \resumeProjectHeading
+      {\textbf{Automotive Restoration \& Electromechanical Repair} $|$ \emph{Hands-on Engineering}}{Miami, FL}
+      \resumeItemListStart
+        \resumeItem{Performed independent diagnostics and repair on passenger vehicles, troubleshooting failures in electromechanical systems including alternators, starter motors, and HVAC compressors.}
+        \resumeItem{Sourced OEM components from salvage inventories (junkyards), assessing part viability and refurbishing hardware to restore vehicle functionality cost-effectively.}
+        \resumeItem{Analyzed electrical schematics to trace and resolve complex fuse shorts and relay failures, applying systemic troubleshooting logic similar to facility asset sustainment.}
+        \resumeItem{Conducted preventative maintenance on internal combustion engines, ensuring long-term reliability and compliance with operational safety standards.}
+      \resumeItemListEnd
+
+    % Project 3: The "CS/AI" Project (To show you meet the 'Required' Qualifications)
+    \resumeProjectHeading
+      {\textbf{AI-Powered Academic Advisor} $|$ \emph{Python, React, OpenAI API}}{Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Developed a full-stack application using \textbf{Python} (Flask) and React to process natural language queries, translating complex academic data into accessible user recommendations.}
+        \resumeItem{Optimized backend algorithms to handle concurrent user requests with low latency, ensuring high system availability.}
+        \resumeItem{Designed a user-friendly frontend interface focused on accessibility, ensuring the tool was usable by students from non-technical backgrounds.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------LEADERSHIP & WORK EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cruz Technical Services (Freelance)}{Miami, FL}
+      {Technical Consultant \& IT Specialist}{Jan 2020 -- Present}
+      \resumeItemListStart
+        \resumeItem{Provided on-site technical support for non-technical clients, resolving hardware and software issues to restore system functionality.}
+        \resumeItem{Translated complex technical constraints into plain language for clients, ensuring clarity and confidence in the repair process (similar to Guest Service interactions).}
+        \resumeItem{Managed project timelines and budgets for small-scale IT infrastructure setups.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\end{document}
